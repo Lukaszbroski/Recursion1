@@ -10,7 +10,7 @@ int main () {
 
 	ifstream test;
 	test.open("test.xml");
-	while (!test.eof()) {
+	while (!test.eof()) { // while not at end of
 		string line;
 		getline(test, line);
 		if (line.length() == 0) {  // skip empty liness
