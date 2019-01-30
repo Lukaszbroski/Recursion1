@@ -1,22 +1,24 @@
 #include<iostream>
-#include "parsetool.h"
 #include<vector>
 #include<map>
 #include<fstream>
+#include "XMLNode.h"
+
 
 using namespace std;
 
+/*
 int main () {
 
 	ifstream test;
-	test.open("test.xml");
+	test.open("C:\\Users\\Lukasz Bakun\\Documents\\github\\Recursion\\test.xml");
 	while (!test.eof()) { // while not at end of
 		string line;
 		getline(test, line);
 		if (line.length() == 0) {  // skip empty liness
 			continue;
 		}
-		Node myNode = parseline(line);   // turns a line into a node
+		XMLNode myNode = myNode.parseline(line);   // turns a line into a node
 
 		// print out the Node info
 		cout << "***********************" << endl;
@@ -30,3 +32,4 @@ int main () {
 	test.close();
 	return 0;
 }
+*/

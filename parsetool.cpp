@@ -12,7 +12,7 @@ using namespace std;
  * Output:  A vector of the split string components
  * Purpose:  splits a string into parts based on a delimiter
  * ******************************************************/
-
+/*
 vector<string> split (string line, char delimiter) {
 
 	vector<string> splitStrings;
@@ -45,7 +45,7 @@ vector<string> split (string line, char delimiter) {
  **************************************************/
 
 
-
+/*
 Node parseline (string line) {
 
 	Node newNode;
@@ -86,3 +86,4 @@ Node parseline (string line) {
 
 
 }
+*/

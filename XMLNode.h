@@ -19,6 +19,14 @@ public:
     void ParseFile(string filename);
     void WriteFile(string filename);
     void PrettyPrintDocument();
+    XMLNode parseline (string);
+    vector <string> split(string line, char delimiter);
+    map<string,string> properties;
+    string content;
+    vector <XMLNode*> myChild;
+    string name;
+private:
+
 };
 
 

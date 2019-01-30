@@ -4,7 +4,7 @@
 #include<string>
 #include<map>
 #include<vector>
-
+/*
 using namespace std;
 
 struct Node {
@@ -19,5 +19,5 @@ Node parseline (string);
 vector<string> split (string, char);
 
 
-
+*/
 #endif
