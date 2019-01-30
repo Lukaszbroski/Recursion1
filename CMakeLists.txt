@@ -12,5 +12,4 @@ add_executable(Recursion1
         test.xml
         test1.xml
         test2.xml
-        testparsetool.cpp
         XMLDriver.cpp XMLNode.h XMLNode.cpp)

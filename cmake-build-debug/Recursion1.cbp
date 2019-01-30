@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Recursion1"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="msvc8"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/Arche/OneDrive/Documents/GitHub/ZOoTR Stat Tracker/Recursion1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Arche\OneDrive\Documents\GitHub\ZOoTR Stat Tracker\Recursion1\cmake-build-debug\Makefile&quot; VERBOSE=1 all"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Arche\OneDrive\Documents\GitHub\ZOoTR Stat Tracker\Recursion1\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Arche\OneDrive\Documents\GitHub\ZOoTR Stat Tracker\Recursion1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Arche\OneDrive\Documents\GitHub\ZOoTR Stat Tracker\Recursion1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Recursion1">
+				<Option output="C:/Users/Arche/OneDrive/Documents/GitHub/ZOoTR Stat Tracker/Recursion1/cmake-build-debug/Recursion1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Arche/OneDrive/Documents/GitHub/ZOoTR Stat Tracker/Recursion1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:/Users/Arche/OneDrive/Documents/GitHub/ZOoTR Stat Tracker/Recursion1/."/>
+					<Add directory="D:\Program Files (x86)\Microsoft\VisualStudio\VC\Tools\MSVC\14.15.26726\ATLMFC\include"/>
+					<Add directory="D:\Program Files (x86)\Microsoft\VisualStudio\VC\Tools\MSVC\14.15.26726\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="D:\Windows Kits\10\include\10.0.17134.0\ucrt"/>
+					<Add directory="D:\Windows Kits\10\include\10.0.17134.0\shared"/>
+					<Add directory="D:\Windows Kits\10\include\10.0.17134.0\um"/>
+					<Add directory="D:\Windows Kits\10\include\10.0.17134.0\winrt"/>
+					<Add directory="D:\Windows Kits\10\include\10.0.17134.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Arche\OneDrive\Documents\GitHub\ZOoTR Stat Tracker\Recursion1\cmake-build-debug\Makefile&quot; VERBOSE=1 Recursion1"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Arche\OneDrive\Documents\GitHub\ZOoTR Stat Tracker\Recursion1\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Arche\OneDrive\Documents\GitHub\ZOoTR Stat Tracker\Recursion1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Arche\OneDrive\Documents\GitHub\ZOoTR Stat Tracker\Recursion1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Recursion1/fast">
+				<Option output="C:/Users/Arche/OneDrive/Documents/GitHub/ZOoTR Stat Tracker/Recursion1/cmake-build-debug/Recursion1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Arche/OneDrive/Documents/GitHub/ZOoTR Stat Tracker/Recursion1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:/Users/Arche/OneDrive/Documents/GitHub/ZOoTR Stat Tracker/Recursion1/."/>
+					<Add directory="D:\Program Files (x86)\Microsoft\VisualStudio\VC\Tools\MSVC\14.15.26726\ATLMFC\include"/>
+					<Add directory="D:\Program Files (x86)\Microsoft\VisualStudio\VC\Tools\MSVC\14.15.26726\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="D:\Windows Kits\10\include\10.0.17134.0\ucrt"/>
+					<Add directory="D:\Windows Kits\10\include\10.0.17134.0\shared"/>
+					<Add directory="D:\Windows Kits\10\include\10.0.17134.0\um"/>
+					<Add directory="D:\Windows Kits\10\include\10.0.17134.0\winrt"/>
+					<Add directory="D:\Windows Kits\10\include\10.0.17134.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Arche\OneDrive\Documents\GitHub\ZOoTR Stat Tracker\Recursion1\cmake-build-debug\Makefile&quot; VERBOSE=1 Recursion1/fast"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Arche\OneDrive\Documents\GitHub\ZOoTR Stat Tracker\Recursion1\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Arche\OneDrive\Documents\GitHub\ZOoTR Stat Tracker\Recursion1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Arche\OneDrive\Documents\GitHub\ZOoTR Stat Tracker\Recursion1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/Arche/OneDrive/Documents/GitHub/ZOoTR Stat Tracker/Recursion1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Arche\OneDrive\Documents\GitHub\ZOoTR Stat Tracker\Recursion1\cmake-build-debug\Makefile&quot; VERBOSE=1 edit_cache"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Arche\OneDrive\Documents\GitHub\ZOoTR Stat Tracker\Recursion1\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Arche\OneDrive\Documents\GitHub\ZOoTR Stat Tracker\Recursion1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Arche\OneDrive\Documents\GitHub\ZOoTR Stat Tracker\Recursion1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/Arche/OneDrive/Documents/GitHub/ZOoTR Stat Tracker/Recursion1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Arche\OneDrive\Documents\GitHub\ZOoTR Stat Tracker\Recursion1\cmake-build-debug\Makefile&quot; VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Arche\OneDrive\Documents\GitHub\ZOoTR Stat Tracker\Recursion1\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Arche\OneDrive\Documents\GitHub\ZOoTR Stat Tracker\Recursion1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Arche\OneDrive\Documents\GitHub\ZOoTR Stat Tracker\Recursion1\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/Arche/OneDrive/Documents/GitHub/ZOoTR Stat Tracker/Recursion1/XMLDriver.cpp">
+			<Option target="Recursion1"/>
+		</Unit>
+		<Unit filename="C:/Users/Arche/OneDrive/Documents/GitHub/ZOoTR Stat Tracker/Recursion1/XMLNode.cpp">
+			<Option target="Recursion1"/>
+		</Unit>
+		<Unit filename="C:/Users/Arche/OneDrive/Documents/GitHub/ZOoTR Stat Tracker/Recursion1/XMLNode.h">
+			<Option target="Recursion1"/>
+		</Unit>
+		<Unit filename="C:/Users/Arche/OneDrive/Documents/GitHub/ZOoTR Stat Tracker/Recursion1/parsetool.cpp">
+			<Option target="Recursion1"/>
+		</Unit>
+		<Unit filename="C:/Users/Arche/OneDrive/Documents/GitHub/ZOoTR Stat Tracker/Recursion1/parsetool.h">
+			<Option target="Recursion1"/>
+		</Unit>
+		<Unit filename="C:/Users/Arche/OneDrive/Documents/GitHub/ZOoTR Stat Tracker/Recursion1/test.sh">
+			<Option target="Recursion1"/>
+		</Unit>
+		<Unit filename="C:/Users/Arche/OneDrive/Documents/GitHub/ZOoTR Stat Tracker/Recursion1/test.xml">
+			<Option target="Recursion1"/>
+		</Unit>
+		<Unit filename="C:/Users/Arche/OneDrive/Documents/GitHub/ZOoTR Stat Tracker/Recursion1/test1.xml">
+			<Option target="Recursion1"/>
+		</Unit>
+		<Unit filename="C:/Users/Arche/OneDrive/Documents/GitHub/ZOoTR Stat Tracker/Recursion1/test2.xml">
+			<Option target="Recursion1"/>
+		</Unit>
+		<Unit filename="C:/Users/Arche/OneDrive/Documents/GitHub/ZOoTR Stat Tracker/Recursion1/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

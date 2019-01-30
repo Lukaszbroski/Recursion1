@@ -1,5 +1,5 @@
 //
-// Created by Lukasz Bakun on 1/29/2019.
+// Created by Luke on 1/29/2019.
 //
 
 #include <iostream>
@@ -7,7 +7,7 @@
 #include <vector>
 #include <map>
 #include <fstream>
-#import "XMLNode.h"
+#include "XMLNode.h"
 
 using namespace std;
 
@@ -28,11 +28,11 @@ void XMLNode::ParseFile(string filename) {
 
     if (filename[0] == '<') {
         XMLNode myNode = parseline(filename);
-        cout << "Child: " << myNode.name << endl;
+        //cout << "Child: " << myNode.name << endl;
         for(const auto& kv : myNode.properties) {
-            cout << "\t" << kv.first << ": " << kv.second << endl;
+            //cout << "\t" << kv.first << ": " << kv.second << endl;
         }
-        cout << "Content: " << myNode.content << endl;
+        //cout << "Content: " << myNode.content << endl;
     }
     else {
         ifstream test;
@@ -46,13 +46,9 @@ void XMLNode::ParseFile(string filename) {
             XMLNode myNode = parseline(line);   // turns a line into a node
 
             // print out the Node info
-            cout << "***********************" << endl;
-            cout << "Node: " << myNode.name << endl;
-            for (const auto &kv : myNode.properties) {
-                cout << "\t" << kv.first << ": " << kv.second << endl;
-            }
-            cout << "Content: " << myNode.content << endl;
-            cout << "***********************" << endl;
+
+
+
         }
         test.close();
     }
@@ -93,6 +89,29 @@ vector<string> XMLNode::split (string line, char delimiter) {
 
 }
 
+vector<string> XMLNode::split (string line, string delimiter) {
+
+    vector<string> splitStrings;
+    int start = 0;
+    int end = line.find(delimiter);
+    //cout << line.substr(start,line.find(delimiter)) << endl;
+    while (end != string::npos ) {
+        string subs = line.substr(start, end-start);
+        //cout << subs << endl;
+        start = end+1;
+        end = line.find(delimiter, start);
+        //cout << "start: " << start << endl;
+        //cout << "end: " << end << endl << endl;
+        splitStrings.push_back(subs);
+    }
+    string subs = line.substr(start, line.length()-start);
+    //cout << subs << endl;
+    splitStrings.push_back(subs);
+
+    return splitStrings;
+
+}
+
 XMLNode XMLNode::parseline(string line) {
 
     XMLNode newNode;
@@ -101,16 +120,16 @@ XMLNode XMLNode::parseline(string line) {
     int startOfTag = 1;
     int endOfTag = line.find(">");
     string tagString = line.substr(startOfTag, endOfTag - startOfTag);
-    cout << "endOfTag: " << endOfTag << endl;
-    cout << tagString << endl;
+    //cout << "endOfTag: " << endOfTag << endl;
+    //cout << tagString << endl;
     // pulls the name and properties out of the node
     vector<string> properties;
     properties = split(tagString, ' ');
     for (auto val: properties) {
-        cout << "val: " << val << endl;
+        //cout << "val: " << val << endl;
         vector<string> props = split(val, '=');
         if (props.size() !=  2) {    // we know this is the name of the node
-            cout << "node named: " << props[0] << endl;;
+            //cout << "node named: " << props[0] << endl;;
             newNode.name = props[0];
         }
         else {   	// got an actual property
@@ -126,12 +145,51 @@ XMLNode XMLNode::parseline(string line) {
     int startOfContent = endOfTag+1;
     string endNode = "</" + newNode.name + ">";
     int endOfContent = line.rfind(endNode);
-    if (line[endOfTag+1] == '<'){
-        ParseFile(line.substr(endOfTag+1,endOfContent));
+    //cout << endNode;
+    bool hasSibling = false;
+
+    //cout << "start: " << startOfContent << " end: " << endOfContent << endl;
+    if (newNode.name != "Child") {
+        cout << "***********************" << endl;
+    }
+    cout << "Node: " << newNode.name << endl;
+    for (const auto &kv : newNode.properties) {
+        cout << "\t" << kv.first << ": " << kv.second << endl;
+    }
+    cout << "Content: " << endl;
+    if (line.substr(startOfContent, endOfContent - startOfContent).find(endNode) < line.substr(startOfContent, endOfContent - startOfContent).size() - line.rfind('<') - 1) {
+        hasSibling = true;
+    }
+    if (line[startOfContent] == '<'){
+
+        //else {
+            ParseFile(line.substr(startOfContent, endOfContent - startOfContent));
+        //}
     }
     else {
-        //cout << "start: " << startOfContent << " end: " << endOfContent << endl;
-        newNode.content = line.substr(startOfContent, endOfContent - startOfContent);
+        if (!hasSibling) {
+            newNode.content = line.substr(startOfContent, endOfContent - startOfContent);
+        }
+        else {
+            newNode.content = line.substr(startOfContent, line.substr(startOfContent, endOfContent - startOfContent).find(endNode));
+        }
+    }
+
+
+    cout << "\t" << newNode.content << endl;
+    cout << "end " << newNode.name << " content" << endl;
+    if (line.substr(startOfContent, endOfContent - startOfContent).find(endNode) < line.substr(startOfContent, endOfContent - startOfContent).size() - line.rfind('<') - 1) {
+        hasSibling = true;
+        //cout << line.substr(startOfContent, endOfContent - startOfContent) << endl;
+        vector<string> substrings = split(line.substr(startOfContent, endOfContent - startOfContent), "><");
+        for (int i = 1; i < substrings.size(); i++) {
+            //cout << substrings[i];
+            ParseFile(substrings[i]);
+        }
+    }
+    if (newNode.name != "Child") {
+        cout << "***********************" << endl;
+        cout << endl;
     }
     return newNode;
 

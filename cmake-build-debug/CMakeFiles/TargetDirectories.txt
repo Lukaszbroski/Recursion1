@@ -1,0 +1,3 @@
+C:/Users/Arche/OneDrive/Documents/GitHub/ZOoTR Stat Tracker/Recursion1/cmake-build-debug/CMakeFiles/Recursion1.dir
+C:/Users/Arche/OneDrive/Documents/GitHub/ZOoTR Stat Tracker/Recursion1/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Arche/OneDrive/Documents/GitHub/ZOoTR Stat Tracker/Recursion1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

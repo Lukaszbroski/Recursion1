@@ -17,6 +17,6 @@ int main () {
 	test3.PrettyPrintDocument();
 */
 
-    XMLNode test1("C:\\Users\\Lukasz Bakun\\Documents\\github\\Recursion\\test.xml");
+    XMLNode test1("C:\\Users\\Arche\\OneDrive\\Documents\\GitHub\\ZOoTR Stat Tracker\\Recursion1\\test.xml");
 	return 0;
 }

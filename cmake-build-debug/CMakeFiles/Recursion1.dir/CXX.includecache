@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Arche/OneDrive/Documents/GitHub/ZOoTR Stat Tracker/Recursion1/XMLNode.cpp
+iostream
+-
+string
+-
+vector
+-
+map
+-
+fstream
+-
+XMLNode.h
+C:/Users/Arche/OneDrive/Documents/GitHub/ZOoTR Stat Tracker/Recursion1/XMLNode.h
+
+C:/Users/Arche/OneDrive/Documents/GitHub/ZOoTR Stat Tracker/Recursion1/XMLNode.h
+iostream
+-
+string
+-
+vector
+-
+map
+-
+fstream
+-
+

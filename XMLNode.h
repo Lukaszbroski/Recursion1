@@ -21,6 +21,7 @@ public:
     void PrettyPrintDocument();
     XMLNode parseline (string);
     vector <string> split(string line, char delimiter);
+    vector <string> split(string line, string delimiter);
     map<string,string> properties;
     string content;
     vector <XMLNode*> myChild;
